@@ -20,8 +20,10 @@ function nowServing(line) {
   return `Currently serving ${line.shift()}.`
 };
 
-function takeANumber(line, name) {
-  line.push(name)
-
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+let ticketMachine = 1
+function takeANumber(line) {
+  let customerTicket = ticketMachine
+  line.push(ticketMachine)
+ ticketMachine++
+  return `Welcome, ${ticketMachine - 1}. You are number ${line.length} in line.`
 };
