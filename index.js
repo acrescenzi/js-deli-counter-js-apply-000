@@ -25,5 +25,5 @@ function takeANumber(line) {
   let customerTicket = ticketMachine
   line.push(ticketMachine)
  ticketMachine++
-  return `Welcome, ${ticketMachine - 1}. You are number ${line.length} in line.`
+  return `Welcome, ${customerTicket}. You are number ${line.length} in line.`
 };
